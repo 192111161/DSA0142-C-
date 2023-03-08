@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+    cout << "Enter the number of values: ";
+    cin >> n;
+    cout << "Enter the values: ";
+    for(int i = 0; i < n; i++) {
+        int val;
+        cin >> val;
+        if(val % 10 == 4) {
+            sum += val;
+        }
+    }
+    cout << "The sum of all values ending with 4 is: " << sum << endl;
+    return 0;
+}
